@@ -204,7 +204,7 @@ Open file as byte stream (8KB chunks)
 
 ---
 
-## 11. Language-Specific Notes (Python 🐍)
+## 11. Language-Specific Notes (Python)
 
 - Use `argparse` for CLI parsing
 - Use `open(file, 'rb')` and read in chunks for byte-level access

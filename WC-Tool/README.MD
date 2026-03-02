@@ -4,7 +4,7 @@ A command-line tool that replicates the Unix `wc` command. Reads from files or `
 
 ---
 
-## 📦 Project Structure
+## Project Structure
 
 ```
 WC-Tool/
@@ -24,7 +24,7 @@ WC-Tool/
 
 ---
 
-## 🚀 Setup
+## Setup
 
 ```bash
 # Create and activate virtual environment
@@ -38,7 +38,7 @@ pip install -r requirements.txt
 
 ---
 
-## 💻 Usage
+## Usage
 
 ```bash
 # Default (lines, words, bytes)
@@ -63,7 +63,7 @@ echo "hello world" | python main.py -w
 
 ---
 
-## 🧪 Running Tests
+## Running Tests
 
 ```bash
 pytest
@@ -71,7 +71,7 @@ pytest
 
 ---
 
-## ✅ Supported Flags
+## Supported Flags
 
 | Flag | Description |
 |------|-------------|
@@ -84,7 +84,7 @@ pytest
 
 ---
 
-## ⚙️ Design Highlights
+## Design Highlights
 
 - **Byte-first reading** — opens files as binary (`rb`) for accurate `-c` counts
 - **8KB chunk streaming** — never loads the full file into memory; safe for GB-scale files

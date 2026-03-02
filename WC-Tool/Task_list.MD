@@ -4,7 +4,7 @@
 
 ---
 
-## 🏗️ Phase 1: Project Setup
+## Phase 1: Project Setup
 
 - [x] Create project directory structure (`main.py`, `cli_parser.py`, etc.)
 - [x] Set up a virtual environment (`python -m venv .venv`)
@@ -13,7 +13,7 @@
 
 ---
 
-## 🔌 Phase 2: CLI Parser (`cli_parser.py`)
+## Phase 2: CLI Parser (`cli_parser.py`)
 
 - [ ] Parse flags: `-l`, `-w`, `-c`, `-m`, `-L`
 - [ ] Support combined flags (e.g., `-lw`)
@@ -23,7 +23,7 @@
 
 ---
 
-## 📂 Phase 3: Input Reader (`input_reader.py`)
+## Phase 3: Input Reader (`input_reader.py`)
 
 - [ ] Implement `read_file(path)` — opens file as binary, yields 8KB chunks
 - [ ] Implement `read_stdin()` — reads from `sys.stdin.buffer` in chunks
@@ -32,7 +32,7 @@
 
 ---
 
-## ⚙️ Phase 4: Processor State (`processor_state.py`)
+## Phase 4: Processor State (`processor_state.py`)
 
 - [ ] Define `WcContext` dataclass with:
   - [ ] `prev_ended_mid_word: bool`
@@ -41,7 +41,7 @@
 
 ---
 
-## 🔢 Phase 5: Processor (`processor.py`)
+## Phase 5: Processor (`processor.py`)
 
 - [ ] Implement `analyze(stream, flags) → Result` (chunk-based, uses `WcContext`)
 - [ ] `_count_bytes(chunk)` — `len(chunk)`
@@ -53,7 +53,7 @@
 
 ---
 
-## 📦 Phase 6: Result Model (`result.py`)
+## Phase 6: Result Model (`result.py`)
 
 - [ ] Define `Result` dataclass:
   - [ ] `file_name: str`
@@ -65,7 +65,7 @@
 
 ---
 
-## 🎛️ Phase 7: Controller (`controller.py`)
+## Phase 7: Controller (`controller.py`)
 
 - [ ] Implement `run(flags, file_paths) → list[Result]`
 - [ ] Iterate over each file, call reader + processor
@@ -74,7 +74,7 @@
 
 ---
 
-## 🖨️ Phase 8: Output Formatter (`output_formatter.py`)
+## Phase 8: Output Formatter (`output_formatter.py`)
 
 - [ ] Implement `format_single(result, flags) → str`
 - [ ] Implement `format_multiple(results, flags) → str` with totals row
@@ -83,7 +83,7 @@
 
 ---
 
-## 🧪 Phase 9: Testing
+## Phase 9: Testing
 
 - [ ] Unit tests for each counting function (`processor.py`)
 - [ ] Unit tests for `cli_parser.py`
@@ -101,7 +101,7 @@
 
 ---
 
-## 🔮 Phase 10: Future / Nice-to-Have
+## Phase 10: Future / Nice-to-Have
 
 - [ ] `--encoding` flag for custom input encoding
 - [ ] Parallel file processing (`threading` / `asyncio`)
